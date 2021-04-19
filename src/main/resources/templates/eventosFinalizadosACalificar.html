@@ -1,0 +1,49 @@
+
+<div class="row">
+    <div class="col-lg-12">
+<table class="table">
+				<thead>
+					<tr>
+						<th>Eventos (EZE CORREGIME SI ESTO NO ES LO QUE PEDIA EL
+							REQUERIMIENTO)</th>
+					</tr>
+					<tr>
+						<th>Presiona para ver Sugerencias</th>
+					</tr>
+
+				</thead>
+				<tbody>
+
+					<tr>
+						<td><ul>
+								{{#each Evento}}
+								<li>{{fecha}}</li>
+								<ul>
+									<li>{{lugar}}</li>
+									<li>{{guardarropasAsociado.nombre}}</li>
+									<li>Evento Formal:{{esFormal}}</li>
+									<li>Criterios:{{#each criteriosAsociados}}
+										<ul>
+											<li>{{nombre}}</li>
+										</ul> {{/each}}
+									</li>
+								</ul>
+								{{/each}}
+							</ul></td>
+						<td></td>
+					</tr>
+					</ul>
+					</td>
+
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								{{#each Evento}}
+								<li><a class="btn btn-outline-secondary" href="/sugerencias/finalizada">Ver</a></li>
+								{{/each}}
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
